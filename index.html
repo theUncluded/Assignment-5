@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+        <button onclick="addRow()" >Add Row</button>
+        <button onclick="addColumn()">Add Column</button>
+        <button onclick="removeRow()">Remove Row</button>
+        <button onclick="removeColumn()">Remove Column</button>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Select A Color</button>
+            <div class="dropdown-content">
+                <button id="red" onclick="changeColor(this.id)">Red</button>
+                <button id="blue" onclick="changeColor(this.id)">Blue</button>
+                <button id="green" onclick="changeColor(this.id)">Green</button>
+            </div>
+        </div>
+        
+        <button onclick="fillEvery()">Fill Every</button>
+        <button onclick="fillUncolored()">Fill Uncolored</button>
+        <button onclick="clearAll()">Clear All</button>
+
+        <div id="container">
+            <div class="row">
+                <div class="column"></div>
+            </div>
+        </div>
+        
+</body>
+</html>
